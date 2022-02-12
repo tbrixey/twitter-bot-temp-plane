@@ -12,7 +12,7 @@ const run = async () => {
   while (true) {
     const players = await axios
       .get("https://thetemporaryplane.com/api/players")
-      .then((res) => res.data);
+      .then((res) => res.data.data);
 
     const userClient = new TwitterApi({
       appKey: process.env.CONSUMER_KEY,
