@@ -11,7 +11,7 @@ const wait = (seconds) =>
 const run = async () => {
   while (true) {
     const players = await axios
-      .get("https://the-temporary-plane.herokuapp.com/api/players")
+      .get("https://thetemporaryplane.com/api/players")
       .then((res) => res.data);
 
     const userClient = new TwitterApi({
@@ -23,11 +23,16 @@ const run = async () => {
 
     const rwClient = userClient.readWrite;
 
-    await rwClient.v1.updateAccountProfile({
+    const results = await rwClient.v1.updateAccountProfile({
       description: baseBio + `\n${players.length} Players in the void`,
     });
 
-    await wait(3600);
+    if (!results.id) {
+      console.error("Failed to update bio - ", Date.now());
+    }
+
+    // 3600 seconds = 1 hour
+    await wait(14400); //4 hours
   }
 };
 
