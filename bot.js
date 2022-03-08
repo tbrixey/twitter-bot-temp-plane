@@ -4,7 +4,7 @@ const { TwitterApi } = require("twitter-api-v2");
 require("dotenv").config();
 
 const baseBio =
-  "Addicted to ☕️ Sr Application Developer @cremalab Lead Developer @vybin_network Working on something called The Temporary Plane";
+  "Dad, Software Engineer, Lead Developer @vybin_network, Working on something called The Temporary Plane";
 
 cron.schedule("0 */4 * * *", async () => {
   const players = await axios
