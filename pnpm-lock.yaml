@@ -1,0 +1,59 @@
+lockfileVersion: 5.3
+
+specifiers:
+  axios: ^0.26.0
+  dotenv: ^16.0.0
+  node-cron: ^3.0.0
+  twitter-api-v2: ^1.10.3
+
+dependencies:
+  axios: 0.26.1
+  dotenv: 16.0.0
+  node-cron: 3.0.0
+  twitter-api-v2: 1.11.1
+
+packages:
+
+  /axios/0.26.1:
+    resolution: {integrity: sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==}
+    dependencies:
+      follow-redirects: 1.14.9
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
+  /dotenv/16.0.0:
+    resolution: {integrity: sha512-qD9WU0MPM4SWLPJy/r2Be+2WgQj8plChsyrCNQzW/0WjvcJQiKQJ9mH3ZgB3fxbUUxgc/11ZJ0Fi5KiimWGz2Q==}
+    engines: {node: '>=12'}
+    dev: false
+
+  /follow-redirects/1.14.9:
+    resolution: {integrity: sha512-MQDfihBQYMcyy5dhRDJUHcw7lb2Pv/TuE6xP1vyraLukNDHKbDxDNaOE3NbCAdKQApno+GPRyo1YAp89yCjK4w==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dev: false
+
+  /moment-timezone/0.5.34:
+    resolution: {integrity: sha512-3zAEHh2hKUs3EXLESx/wsgw6IQdusOT8Bxm3D9UrHPQR7zlMmzwybC8zHEM1tQ4LJwP7fcxrWr8tuBg05fFCbg==}
+    dependencies:
+      moment: 2.29.1
+    dev: false
+
+  /moment/2.29.1:
+    resolution: {integrity: sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==}
+    dev: false
+
+  /node-cron/3.0.0:
+    resolution: {integrity: sha512-DDwIvvuCwrNiaU7HEivFDULcaQualDv7KoNlB/UU1wPW0n1tDEmBJKhEIE6DlF2FuoOHcNbLJ8ITL2Iv/3AWmA==}
+    engines: {node: '>=6.0.0'}
+    dependencies:
+      moment-timezone: 0.5.34
+    dev: false
+
+  /twitter-api-v2/1.11.1:
+    resolution: {integrity: sha512-D5aAXPf8rJBiOLxbymvxwXfh+Lwk6M8CwINAPBNDdAw/3+EmPCG5jA6SKkA0Kqv1t6K5zLclrVyNfav+9nMhVQ==}
+    dev: false
